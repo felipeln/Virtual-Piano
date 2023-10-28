@@ -48,7 +48,7 @@ header{
   
   margin-bottom: 40px;
 }
-#show-teclas{
+#show-key-text{
   outline: none;
   appearance: none;
   width: 60px;
@@ -60,7 +60,7 @@ header{
 
   transition: ease-in-out .4s;
 }
-#show-teclas::after{
+#show-key-text::after{
   content: "";
   position: absolute;
   border-radius: 30px;
@@ -73,10 +73,10 @@ header{
   left: 5px;
   transition: all ease-in 200ms;
 }
-#show-teclas:checked{
+#show-key-text:checked{
   background-color: rgb(36, 179, 36);
 }
-#show-teclas:checked::after{
+#show-key-text:checked::after{
   top: 50%;
   transform:translate(100%,-50%);
   right: 5px;
@@ -139,10 +139,13 @@ header{
 
 }
 
-.key.black:active,.key.white:active{
+.key.black.active,.key.white.active{
   border-bottom: none;
 }
 
+.hide{
+  display: none;
+}
 
 /* Mobile Devices (Landscape) and Small Tablets: */
 
