@@ -12,27 +12,25 @@ const playTune = (key) =>{
   audio.play()
   
   pianoKeys.forEach((keyElement) => {
-    if(key === keyElement.querySelector('span').innerHTML){
+    if(key == keyElement.querySelector('span').innerHTML){
       keyElement.classList.add('active')
       setTimeout(() => {
         keyElement.classList.remove('active')
       },150)
     }
   })
-
 }
 
 
 pianoKeys.forEach((key) => {
   let keyText = key.querySelector('span').innerHTML
-
   key.addEventListener('click', () => playTune(keyText))
-  keyMap.push(keyText)
+  keyMap.push(keyText, keyText.toUpperCase())
 })
 
 document.addEventListener("keydown", (e) =>{
   if(keyMap.includes(e.key)){
-    playTune(e.key)
+    playTune(e.key.toLowerCase())
   }
 })
 
