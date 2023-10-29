@@ -1,7 +1,7 @@
 
 # Virtual Piano
-Virtual piano construido com html, css e js.
-Construido durante o bootcamp Potência Tech iFood - Desenvolvimento de Jogos
+Virtual piano feito com html, css e js.
+Construído durante o bootcamp Potência Tech iFood - Desenvolvimento de Jogos
 
 Resultado: [Virtual Piano](https://felipeln-virtual-piano.vercel.app/)
 
